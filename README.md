@@ -1,6 +1,6 @@
 # BITE evidence pack
 
-BITE (Behavior-Intent Traceable Evaluation) is how Knostic decides whether a third-party extension, agent skill, or MCP server is malicious rather than merely powerful. Deterministic analysis finds atomic behaviors (credential reads, outbound calls, file writes, command execution) and connects them into chains along the code's call graph, or along instruction order for prose-only skills. A model then compares each chain with what the artifact claims to do and answers three questions: is the chain reachable, is it unnecessary for the stated purpose, and is it concealed from the user. Every verdict points to a place in the artifact. On 465 labeled agent skills, false positives at high/critical fell from 148 to 34 and precision more than doubled, at a recall cost (100% to 68%).
+BITE (Behavior-Intent Traceable Evaluation) is how Knostic decides whether a third-party extension, agent skill, or MCP server is malicious rather than merely powerful. Deterministic analysis finds atomic behaviors (credential reads, outbound calls, file writes, command execution) and connects them into chains along the code's call graph, or along instruction order for prose-only skills. A model then compares each chain with what the artifact claims to do and answers three questions: is the chain reachable, is it unnecessary for the stated purpose, and is it concealed from the user. Every verdict points to a place in the artifact.
 
 ## What it found
 
