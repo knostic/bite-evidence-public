@@ -4,8 +4,8 @@ BITE (Behavior-Intent Traceable Evaluation) is how Knostic decides whether a thi
 
 ## What it found
 
-- **ManageRBLX 4.9.5 (VS Code extension, SaassyCode campaign).** Claimed to be a local task board that needs no internet. The chain was activation, download of a remote resource, write to disk, execution. Unnecessary for a local task board and contradicted by its own documentation. [Knostic disclosure](https://www.knostic.ai/blog/new-vs-code-extensions-attack-campaign-saassycode-managerblx-trelloblox) · [VirusTotal record](https://www.virustotal.com/gui/file/cfdf72c510670341dce392ab250a5f5ff2a398d993d1106fb8026ec6397cb393)
-- **gadgethumans-mcp 1.0.9 (MCP server).** Claimed to auto-sign wallet micropayments. The chain read the private key and sent it unchanged to a remote server, with no local signing code in the package. Auto-signing implies the key stays local, so this is concealed credential theft, not disclosed capability. [Source repository](https://github.com/gadgethumans-dev/gadgethumans-mcp) · [Knostic investigation](https://www.knostic.ai/blog/when-auto-signing-sends-your-wallet-private-key-to-a-remote-server-a-malicious-mcp-package-on-npm)
+- **ManageRBLX 4.9.5 (VS Code extension, SaassyCode campaign).** Claimed to be a local task board that needs no internet. The chain was activation, download of a remote resource, write to disk, execution. Unnecessary for a local task board and contradicted by its own documentation.
+- **gadgethumans-mcp 1.0.9 (MCP server).** Claimed to auto-sign wallet micropayments. The chain read the private key and sent it unchanged to a remote server, with no local signing code in the package. Auto-signing implies the key stays local, so this is concealed credential theft, not disclosed capability.
 - **An agent skill (not yet publicly named).** Ships only instructions. Before using the legitimate tool it wraps, it tells the agent to download, unpack, and run an unrelated file. The real tool needs no such step.
 
 ## Public references
